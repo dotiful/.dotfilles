@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Easier navigation.
+alias ..="cd .."
+alias ...="cd ../.."
+
+# Shortcuts.
+alias g="git"
+alias h="history"
+alias v="vim"
+
+# List all files in long format, including dotfiles.
+alias l="ls -Glah"
+
+# Always enable colored `grep` output.
+alias grep="grep --color=auto"
