@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# alias r=". ~/.bash_profile"
+# alias p="~/.home/p.sh"
+
+# Quicker navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# ls, the common ones I use a lot shortened for rapid fire usage
+alias l='ls -lFh'   #size,show type,human readable
+alias la='ls -lAFh' #long list,show almost all,show type,human readable
+alias lr='ls -tRFh' #sorted by date,recursive,show type,human readable
+alias lt='ls -ltFh' #long list,sorted by date,show type,human readable
+alias ll='ls -l'    #long list
+alias ldot='ls -ld .*'
+alias lS='ls -1FSsh'
+alias lart='ls -1Fcart'
+alias lrt='ls -1Fcrt'
+
+# Move export GREP_OPTIONS="--color=auto" (which is deprecated) from .exports to .alias
+# Always enable colored `grep` output`
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+
+# # use coreutils `ls` if possible…
+# hash gls >/dev/null 2>&1 || alias gls="ls"
+#
+# # always use color, even when piping (to awk,grep,etc)
+# if gls --color > /dev/null 2>&1; then colorflag="--color"; else colorflag="-G"; fi;
+# export CLICOLOR=1
+#
+# # ls options: A = include hidden (but not . or ..), F = put `/` after folders, h = byte unit suffixes
+# alias ls='gls -AFh ${colorflag} --group-directories-first'
+# alias lsd='ls -l | grep "^d"' # only directories
+# #    `la` defined in .functions
+# ###
