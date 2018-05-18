@@ -1,0 +1,9 @@
+- dotfiles:
+    freckle:
+      - ~/freckles
+    ask-become-pass: true
+- python-dev:
+    freckle:
+      - gh:makkus/freckles
+    ask-become-pass: true
+- gh:makkus/freckles/examples/housekeeping.yml

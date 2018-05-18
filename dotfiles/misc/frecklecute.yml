@@ -1,0 +1,13 @@
+tasks:
+  - file:
+      path: ~/.backups/zile
+      state: directory
+  - elliotweiser.osx-command-line-tools:
+      meta:
+        become: no
+  - geerlingguy.homebrew:
+      meta:
+        become: no
+  - vars:
+      homebrew_taps:
+        - caskroom/cask

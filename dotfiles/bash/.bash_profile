@@ -2,7 +2,7 @@
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
-for file in ~/.{aliases,bash_prompt,exports}; do
+for file in ~/.{aliases,bash_prompt,exports,profile}; do
   # shellcheck disable=1090
   [ -r "${file}" ] && [ -f "${file}" ] && . "${file}"
 done
